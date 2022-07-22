@@ -1,0 +1,19 @@
+##### NOTE NOT PRODUCTION READY A CERTAIN USE WITH CARE
+## FEEL FREE TO MODIFY THE CODE 
+/*****************
+This is a Staking Contract whereby a user
+stakes a certain amount of tokens into the contract
+the contract burns the token for the stake then the user
+gets rewarded a portion of the staked contract in form of a reward
+the reward is then minted by the contract,
+once the user removes his stake the contract mints the staked amount for the user
+
+/**** FEATURES
+A reward system
+users cannot remove stake or stakeholder when rewards have not been claimed
+in order to check reward the DistributeReward function must be used or else you wont be able to claim rewards
+users can only claim entire rewards
+The tokens and rewards use the MayoralToken (feel free to use that one too)
+
+ /**** PROBLEM
+ Users can call the DistributeReward function multiple times to cheat the reward system
